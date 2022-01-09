@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <title>
+        Evaluacion Tema 3 - Naal Balan
+    </title>
+    <body>
+<h1>Registro de los participantes</h1>
+<table>
+    <tr>
+        <td>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+
+            <!--Division del id del participante-->
+                <div>
+                    <label for="ID_participante">
+                        ID_participante:
+                    </label>
+                    <input type="number" id="ID_participante" name="ID_participante">
+                </div>
+
+                <!--Division del nombre del participante-->
+<div>
+    <label for="nombre_participante">
+        Nombre del participante:
+    </label>
+    <input type="text" id="nombre_participante" name="nombre_participante">
+</div>
+
+<!--Division de la fecha de inscripcion-->
+<div>
+    <label for="fecha">
+        Fecha de inscripción:
+    </label>
+    <input type="date" id="fecha" name="fecha">
+</div>
+
+<!--Division de los días en que estarán inscritos-->
+<div>
+    <label for="dias_inscripcion">
+        Días inscritos:
+    </label>
+    <input type="number" id="dias_inscripcion" name="dias_inscripcion">
+</div>
+
+<div class="form_action--button">
+    <input type="submit" id = "submit" value="Registrar">
+    <input type="reset" value="Reiniciar">
+</div>
+
+<td>
+    <table class="list" id="participate_list">
+        <thead>
+            <tr>
+                <th>ID del participante</th>
+                <th>Nombre del participante</th>
+                <th>Fecha de inscripción</th>
+                <th>Días inscritos</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+           
+        </tbody>
+    </table>
+</td>
+            </form>
+        
+        </td>
+    </tr>
+</table>
+<script type="text/javascript" src="./app.js"></script>
+    </body>
